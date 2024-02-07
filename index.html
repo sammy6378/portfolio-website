@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="porto.css">
-    <link rel="icon" type="image/x-icon" href="/hub/html.jpg" id="icon-x">
-    <!-- <link rel="stylesheet" href="C:\Users\BEST\Desktop\proj\pro.css"> -->
+    <link rel="icon" type="image/x-icon" href="/hub/me.png" id="icon-x">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Samuel's Portfolio</title>
 </head>
@@ -37,12 +36,8 @@
             </ul>
         </nav>
 
-       
-        
-
-            <div class="hero-section"> 
-
-                
+    
+            <div class="hero-section">                 
                     <div class="hero-text">
                                 <p>Hello I'm</p>
                                 <h2 class="color-gold"><span>S</span>ammy Junior Dev</h2>
@@ -50,7 +45,7 @@
                                 
                                 <div class="btn">
                                     <a href="#" class="btn--empty" target="_blank">Hire Me</a>
-                                    <a href="#contactme" class="btn--full">Contact Info</a>
+                                    <a href="./hub/SamuelCV.pdf" target="_blank" class="btn--full">View CV</a>
                                 </div>
                                             <div class="social-links">
                                                 <ul>
@@ -62,48 +57,61 @@
                                                 </div>
                     </div>
                     <div class="profile-pic">
-                        <img src="./hub/Untitled-1.png" alt="my Photo" title="Web and Software Developer">  
+                        <img src="./hub/me.png" alt="my Photo">  
                      </div>
             </div> 
 
     </header>
 
 
-        <section>
-            <div id="portofolio">
-            <div class="container">
-                  <p class="center-text" id="aboutme">ABOUT <span style="color: gold;">ME</span<br></p>
-                  <br>
-                <h1 class="child-text">&UnderBar;Who I am ?&UnderBar;</h1>
-                        <div class="about-page">
-                            <div class="img">
-                               <img src="./hub/html.jpg" alt="my photo"> 
-                            </div>
-                            
-                            <div class="bottom-text">
-                                    
-                                    <span>Why Work With Me?</span>
-
-                                    <div class="close-text">
-                                    <p>My name is <strong style="color:gold;">Samuel Mwangi</strong> currently a second year
-                                    in the University of Kirinyanga.<br>
-                                    I am pursuing BSC in Information Technology. The previous years have been a golden success for me,
-                                    I have learnt much in <strong style="color:gold;">Web Development</strong>  and gained quit range of skills in developmet  using different
-                                    programming languages such as Javascript,Html/Css and Python.</p>
-                                </div>
-                                
-                                <div class="about-me-description">
-                                    <button class="cv-download" ><a href="./hub/SAMUEL Cv.docx" download><i class="fa fa-download" > Download CV</i></a></button>
-                                    <button class="cv-download" ><a href="./hub/SAMUEL Cv.pdf" target="_blank">View CV</a></button>
-                                </div>
-                                    
-                            </div> 
-                        </div>
+     <!---------about------->
+   <div id="about">
+    <div class="container">
+        <div class="row" id="skills">
+            <div class="about-col-1">
+                <img src="./hub/html.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Samuel, a passionate technology enthusiast with a knack for problem-solving and innovation. Currently pursuing my education in Information Technology,
+                    I thrive in the dynamic world of tech where every challenge is an opportunity to learn and grow.
+                    With a solid foundation in programming languages like Python and Java, coupled with hands-on experience in web development,
+                     database management, and networking and to tackle diverse technical challenges.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-             
+                    <div class="tab-contents active-tab" id="skills">
+                            <p><li class="project">Programming Languages: HTML, js, Bootstraps, C++</li>
+                                <li class="project">Database Knowledge: SQL,MongoDB</li>
+                                <li class="project">Version Control: Github,Git</li>
+                                <li class="project">Front-End Technologies: HTML,CSS</li>
+                                <li class="project">Problem Solving,Critical Thinking, Creativity</li>
+                                <li class="project">Design: Photoshop Adobe</li>
+                                <li class="project">Team Work and Collaboration</li></p>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <p>
+                            <li class="project">Portfolio (HTML, CSS, js, Bootstraps)</li>
+                            <li class="project">ECommerce Website (Shopify liquid-code, HTML, CSS)</li>
+                            <li class="project">Fully Responsive Design Email Subscribe form</li>
+                            <li class="project">Blog (HTML, CSS, Bootstraps)</li>
+                            <li class="project">Currently Working on a Messaging App (Like WhatsApp)</li>
+                        </p>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Bsc in IT at Kirinyaga University</li>
+                            <li>Kairi Secondary</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
     </div>
-    </section>
+   </div>
 
+<!-- end of about page -->
 
      <!-- Projects -->
 
@@ -150,13 +158,14 @@
                   </div>
               </div>
           </div>
+
            <!-- projects more -->
+
           <button  class="btn-serve">See more</button>
-         
           <div class="show-div" id="show-up">
             <div class="nav-bar">
                 <div class="close-bar">
-                    <i class="fa fa"  id="close">&times;</i>
+                    <span  id="close">&times;</span>
                    
                 </div>
             </div>   
@@ -403,48 +412,6 @@
                     </div>
 </main>
 
-
-<!-- 
-        <aside>
-
-        
-            <div class="main-hero-aside">
-                <p style="font-size:34px;" id="skills">Check My Skills<br>
-                <h1 style="font-size: 30px;">&UnderBar;My Skills&UnderBar;</h1>
-                </p>
-            </div>
-                    <div class="skills-content"> 
-                    <div class="column left">
-
-                        <div class="text">INTERNSHIP
-                            <p>
-                                <li class="intern">Google Company</li>
-                                <li class="intern">Microsoft Company </li>
-                                <li class="intern">Intel Company </li>
-                            </p>
-                            
-                            
-
-                            <div class="text">PROJECT
-
-                                <p>
-                                    <li class="project">Portfolio (HTML, CSS, js, Bootstraps)</li>
-                                    <li class="project">ECommerce Website (Shopify liquid-code, HTML, CSS)</li>
-                                    <li class="project">QuickShop - eCommerce Website (Like Amazon, Flipkart etc.)</li>
-                                    <li class="project">Fully Responsive Design Email Subscribe form</li>
-                                    <li class="project">Blog (HTML, CSS, Bootstraps)</li>
-                                    <li class="project">Currently Working on a Messaging App (Like WhatsApp)</li>
-                                </p>
-                                </div>
-                            </div>
-                        </div>         
-            </div>
-            
-                    </aside>   -->
-
-<!-- End of Skills -->
-
-
     <!-- footer -->
 
     <footer>
@@ -486,7 +453,7 @@
                         <h1 style="color: black;">Send Message</h1> <br>
                         
                         <label for="fullname"></label>
-                        <input type="text" id="fname" name="fullname" placeholder="Full-names.." class="name">
+                        <input type="text" id="fname" name="fullname" placeholder="Full-names.." class="name" required>
                         <small class="warn"></small>
                         <label for="Email"></label>      
                         <input type="email" id="Email" name="Email" placeholder="me@gmail.com" required> 
@@ -514,10 +481,7 @@
     
     <!-- End of footer -->
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
-    
+    <script src="https://unpkg.com/scrollreveal"></script>    
     <script src="port.js"></script>
    
     
@@ -534,7 +498,19 @@ function hidesidebar(){
     event.preventDefault();
 }
 
-            
+var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+   function opentab(tabname){
+       for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+           tabcontent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab")
+   }
+
         </script>
   
 </body>
