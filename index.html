@@ -78,9 +78,9 @@
                     With a solid foundation in programming languages like Python and Java, coupled with hands-on experience in web development,
                      database management, and networking and to tackle diverse technical challenges.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="showContent('skills')">Skills</p>
+                        <p class="tab-links" onclick="showContent('experience')">Experience</p>
+                        <p class="tab-links" onclick="showContent('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                             <p><li class="project">Programming Languages: HTML, js, Bootstraps, C++</li>
@@ -498,18 +498,17 @@ function hidesidebar(){
     event.preventDefault();
 }
 
-var tablinks = document.getElementsByClassName("tab-links");
-   var tabcontents = document.getElementsByClassName("tab-contents");
-   function opentab(tabname){
-       for(tablink of tablinks){
-           tablink.classList.remove("active-link");
-       }
-       for(tabcontent of tabcontents){
-           tabcontent.classList.remove("active-tab");
-       }
-       event.currentTarget.classList.add("active-link");
-       document.getElementById(tabname).classList.add("active-tab")
-   }
+
+  function showContent(id) {
+   const contents = document.querySelectorAll('.tab-contents');
+   contents.forEach(content => {
+     if (content.id === id) {
+       content.classList.add('active-tab');
+     } else {
+       content.classList.remove('active-tab');
+     }
+   });
+ }
 
         </script>
   

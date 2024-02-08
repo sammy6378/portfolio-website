@@ -17,7 +17,7 @@ sr.reveal('.container p, h1',{delay:100,origin:'bottom'});
 sr.reveal('.worklist',{delay:100,origin:'bottom'});
 sr.reveal('.btn-more',{delay:100,origin:'bottom'});
 sr.reveal('.btn',{delay:100,origin:'bottom'});
-sr.reveal('.top-text h1,p',{delay:100,origin:'bottom'});
+sr.reveal('.top-text h1,p',{delay:100,origin:'right'});
 
 
 

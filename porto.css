@@ -566,7 +566,7 @@ padding: 8px;
   transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links::after{
   width: 50%;
 }
 .tab-contents li{
